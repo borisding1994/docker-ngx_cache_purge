@@ -1,7 +1,7 @@
 FROM alpine:latest
-MAINTAINER WangXian <xian366@126.com>
+MAINTAINER borsiding@zhulux.com
 
-ENV NGINX_VERSION nginx-1.8.0
+ENV NGINX_VERSION nginx-1.11.4
 
 RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
     mkdir -p /tmp/src && \
