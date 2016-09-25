@@ -9,7 +9,7 @@ RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
     cd /tmp/src && \
     wget http://nginx.org/download/${NGINX_VERSION}.tar.gz && \
     tar -zxvf ${NGINX_VERSION}.tar.gz && \
-    wget https://github.com/FRiCKLE/ngx_cache_purge/archive/${CACHE_PURGE_VERSION}.tar.gz && \
+    wget https://github.com/FRiCKLE/ngx_cache_purge/archive/${CACHE_PURGE_VERSION}.tar.gz --no-check-certificate && \
     tar -zxvf ${CACHE_PURGE_VERSION}.tar.gz && \
     cd /tmp/src/${NGINX_VERSION} && \
     ./configure \
