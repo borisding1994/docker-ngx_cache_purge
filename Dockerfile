@@ -20,7 +20,7 @@ RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
         --http-log-path=/app/logs/access.log \
         --error-log-path=/app/logs/error.log \
         --sbin-path=/usr/local/sbin/nginx \
-        --add-module=/tmp/src/${CACHE_PURGE_VERSION} \
+        --add-module=/tmp/src/ngx_cache_purge-${CACHE_PURGE_VERSION} \
         --with-http_sub_module && \
     make && \
     make install && \
